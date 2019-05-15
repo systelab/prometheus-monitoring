@@ -2,7 +2,7 @@
 
 ## Run the stack
 
-In order to tun Prometehus and Grafana, run the following command
+In order to tun Prometheus and Grafana, run the following command
 
 ```bash
 $ docker-compose up -d
