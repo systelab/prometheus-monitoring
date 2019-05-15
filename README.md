@@ -7,7 +7,21 @@ In order to tun Prometheus and Grafana, run the following command
 ```bash
 $ docker-compose up -d
 ```
+> By default, in the configuration folder, the file prometheus.yml adds a new job that will be pooling every 5 seconds to http://localhost/actuator/prometheus. Change that configuration according to your needs.
+
+# Prometheus
 
 Open a browser and point at http://localhost:9090/ for Prometheus.
 
-Open a browser and point at http://localhost:3000/ for Grafana.
+# Grafana
+
+Step by step initial instructions:
+
+1. Open a browser and point at http://localhost:3000/ for Grafana.
+2. Use admin/admin as initial username and password.
+3. Set a new password when prompted.
+4. Add a new Data Source, choosing type Prometheus.
+5. Set up the datasource, using http://localhost:9090 as URL and 'Browser' as Access.
+6. Save and Test the new Data Source.
+7. In the left toolbar, click on the button 'Explore'. With the selector metrics, play with some metrics.
+8. In the left toolbar, click on the button 'Dashboard', to create your own dashboards.
