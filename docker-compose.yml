@@ -7,7 +7,7 @@ services:
     - /var/lib/grafana
     links:
     - prometheus
-    image: grafana/grafana
+    image: grafana/grafana:6.1.6
   prometheus:
     ports:
     - "9090:9090"
@@ -15,4 +15,4 @@ services:
     - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
     - '--config.file=/etc/prometheus/prometheus.yml'
-    image: prom/prometheus
+    image: prom/prometheus:v2.9.2
