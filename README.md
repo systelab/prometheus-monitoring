@@ -1,5 +1,11 @@
 # Monitoring with Prometheus and Grafana
 
+In today's world, metrics collection is mandatory in order to effective monitoring. To do so, it is quite common to use [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/). 
+
+[Prometheus](https://prometheus.io/) is a powerful metrics collection and alerting system, and [Grafana](https://grafana.com/) is one of the best visualization tools which can be used with Prometheus. 
+
+We can create a dashboard with multiple charts together in Grafana. 
+
 ## Run the stack
 
 In order to tun Prometheus and Grafana, run the following command
@@ -9,11 +15,11 @@ $ docker-compose up -d
 ```
 > By default, in the configuration folder, the file prometheus.yml adds a new job that will be pooling every 5 seconds to http://localhost/actuator/prometheus. Change that configuration according to your needs.
 
-# Prometheus
+## Prometheus
 
 Open a browser and point at http://localhost:9090/ for Prometheus.
 
-# Grafana
+## Grafana
 
 Step by step initial instructions:
 
