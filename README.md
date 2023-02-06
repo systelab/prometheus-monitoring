@@ -27,7 +27,7 @@ Step by step initial instructions:
 2. Use admin/admin as initial username and password.
 3. Set a new password when prompted.
 4. Add a new Data Source, choosing type Prometheus.
-5. Set up the datasource, using http://localhost:9090 as URL and 'Browser' as Access.
+5. Set up the datasource, using http://prometheus:9090 as URL.
 6. Save and Test the new Data Source.
 7. In the left toolbar, click on the button 'Explore'. With the selector metrics, play with some metrics.
 8. In the left toolbar, click on the button 'Dashboard', to create your own dashboards.
