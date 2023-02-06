@@ -2,17 +2,17 @@ version: '2'
 services:
   grafana:
     ports:
-    - "3000:3000"
+      - "3000:3000"
     volumes:
-    - /var/lib/grafana
+      - /var/lib/grafana
     links:
-    - prometheus
-    image: grafana/grafana:6.1.6
+      - prometheus
+    image: grafana/grafana:9.3.6
   prometheus:
     ports:
-    - "9090:9090"
+      - "9090:9090"
     volumes:
-    - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
     command:
-    - '--config.file=/etc/prometheus/prometheus.yml'
-    image: prom/prometheus:v2.9.2
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    image: prom/prometheus:v2.42.0
